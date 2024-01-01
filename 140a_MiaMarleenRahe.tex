@@ -14,10 +14,11 @@
 
 % Siia võid lisada endale vajalikke pakke
 \usepackage{listings}
+\usepackage{comment}
 
-\pealkiri{Pealkiri}
+\pealkiri{Erinevate kapsiidivalkudega pakitud adenoassotsieeritud viirusvektorite nakatumisvõime mõõtmine koekultuurides}
 \autor{Mia Marleen Rahe}
-\klass{140. a}
+\klass{140.a, reaal-programmeerimise õppesuund}
 \juhendaja{PhD Illar Pata}
 \juhendaja{õp Kersti Veskimets}
 
@@ -25,17 +26,131 @@
 \maketitle% Tiitelleht
 \tableofcontents% Sisukord
 
+\addchap{Lühendite loetelu}
+
+\setlength\tabcolsep{0 pt}
+
+\begin{center}
+	\begin{tabular}{p{2.5cm} p{7.3cm} p{6cm}}
+		Lühend & Tähendus inglise keeles & Tähendus eesti keeles \\ \hline
+		AAV & adeno-associated viruses & adenoassotsieeritud viirus \\
+		ADA-SCID & adenosine deaminasedeficient severe & adenosiini deaminaasi raske \\
+		& combined immunodeficiency  & kombineeritud immuunpuudulikkus \\
+		B-ALL & B-cell acute lymphoblastic leukemia & B-rakuline äge lümfoidne \\
+		&  & leukeemia \\
+		CALD & cerebral adrenoleukodystrophy & tserebraalne adrenoleukodüstroofia \\		
+		DLBCL & diffuse large B-cell lymphoma & difuusne suur B-rakuline lümfoom \\
+		LCA & Leber’s congenital amaurosis & Leberi kaasasündinud amauroos \\
+		MLD &  metachromatic leukodystrophy & 
+		metakromaatiline leukodüstroofia \\
+		MM & multiple myeloma & hulgimüeloom \\		
+		PMBCL & primary mediastinal large B-cell &  primaarne mediastiinumi \\
+		& lymphoma & B-suurrakklümfoom \\
+		RP & retinitis pigmentosa  & pigmentoosne retiniit \\
+		SCID & severe combined immunodeficiency & raske kombineeritud immuunpuudulikkus\\
+		SMA & spinal muscular atrophy & spinaalne lihasatroofia \\
+		&  &  \\
+
+	\end{tabular}
+\end{center}
+
+\setlength\tabcolsep{6 pt}
+
+
 \addchap{Sissejuhatus}
 
-Sissejuhatus
+Ligikaudu 80\% teadaolevatest haigustest on põhjustatud geenivigade tõttu. Nende ravimiseks on võimalik kasutatada geeniteraapiat. Geeniteraapia on ravi, mille eesmärgiks on organismi geeniekspressiooni muutmine või ebanormaalsete geenide korrigeerimine. Geeniteraapia käigus siirdatakse geeni terve koopia kahjustunud kudede rakkudesse. Terve geenikoopia rakku viimiseks kasutatakse nii vektoreid kui ka füüsikalisi ja keemilisi meetodeid. Kõige sagedamini tehakse seda siiski viirusvektorite abil. Viirusvektorid on viirused, milles enamik pärilikkusainest on asendatud terapeutilise geeniga ning mis ei suuda seetõttu enamasti rakus paljuneda. 
 
-\chapter{\LaTeX \ sisendfail}
-\LaTeX'i sisendfailiks on tekstifail. Väljundfaili saamiseks on vaja kompileerida. Tallinna Reaalkooli uurimistööde alusfaili kasutades on vaja selleks kasutada LuaLaTeX'i. Uurimistöö autor soovitab kasutada töö kirjutamiseks pilves Overleaf'i või Windowsis MiKTeX'i ja TeXStudio't. Sobivad programmid on olemas ka Linux'is.
+Viirusvektoritest on ühed sagedamini kasutatavad adenoassotsieeritud viirusvektorid (AAV). AAV on saanud niivõrd laialdaselt kasutatavaks, sest nende looduslikud serotüübid pole inimese jaoks patogeensed, nad ei suuda rakus iseseisvalt paljuneda ning nende poolt kantav geneetiline materjal ei integreeru peremeesraku genoomi. Lisaks on AAV puhul võimalik koespetsiifiline nakatamine, mis tähendab, et sõltuvalt AAV kapsiidist nakatab ta eelkõige teatud kudesid. See on geeniteraapia aspektist oluline, kuna võimaldab vähendada ravil kasutatavat viirusvektorite kogust, alandades seeläbi ravi maksumust.
 
-Ühele reale on mõistlik kirjutada kas lõik või lause. Uue lõigu alustamiseks tuleb jätta tühi rida. Mitu järjestikust tühikut loetakse üheks.
+Käesoleva uurimistöö eesmärgiks on kasutada reportergeeni ekspresseerivat AAV vektorit, pakkida AAV erinevate kapsiidivalkudega ning nakatada nendega koekultuuri rakke. Määrates rakku sisenenud ning seal ekspresseerunud AAV-ga kantava geneetilise materjali hulka, loodetakse saada vastus uurimistöö peamisele uurimisküsimusele, millised kapsiidivalgud on sobilikumad erinevate inimeste kudede transdutseerimiseks.
 
-Kasulikuks kohaks õppimisel on \url{https://www.overleaf.com/learn/latex/Main_Page}.
+Uurimistöö jaguneb teoreetiliseks ja eksperimentaalseks osaks. Töö teoreetilises osas antakse ülevaade geeniteraapiast, adenoassotsieeritud viirustest ning kasutusest geeniteraapias, erinevatest adenoassotsieeritud viirusvektorite kapsiidivalkude variantidest ning nende modifitseerimisest peptiididega. Uurimistöö eksperimentaalses osas toodetakse reporterviirused, määratakse nende tiitrid qPCR meetodil ning testitakse neid erinevates rakuliinides.
 
+\begin{comment}
+transdutseeritakse koekultuuri rakke adenoassotsieeritud viirusvektoritega, mille kapsiide on modifitseeritud erinevate peptiidega. Rakkude inkubeerimisel Luc-2 substraati D-lutsiferiini sisaldavas puhvris ja eraldunud valgusvoo hulga määramisel luminomeetriga mõõdetakse reportergeeni jaanimardika lutsiferaasi ekspressiooni aktiivsust.
+\end{comment}
+
+Uurimistöö geeniteraapia teoreetiline alus põhineb peamiselt artiklitel \textit{Non Viral Vectors in Gene Therapy- An Overview} ja \textit{Gene therapy: advances, challenges and perspectives}. Adenoassiotseeritud viiruste ülevaade põhineb suures mahus artiklitele \textit{AAV vectors: The Rubik’s cube of human gene therapy} ning \textit{AAV-Mediated Gene Therapy for Research and Therapeutic Purposes}.
+
+\chapter{Kirjanduse ülevaade}
+
+\section{Geeniteraapia üldiseloomustus}
+
+\subsection{Geeniteraapia ajalugu}
+
+Esimene müügiloa saanud ravim, mida valmistati organismi geneetilise muundamise abil, oli rekombinantne insuliin. Esmakordselt valmistati seda 1978. aastal ning selleks viidi inimese insuliini tootev geen kolibakteri plasmiidi, mille tagajärjel hakkas bakter insuliini tootma \parencite{insuliin}. Mõte geeniteraapiast kui viisist ravida geenivigade tõttu tekitatud haigusi tekkis 1960. aastatel. 1961. aastal viidi esimest korda DNAd inimeselt võetud rakkudesse. Esimene katse geeniteraapiat rakendada inimeste puhul tehti 1971. aastal, kahjuks ei kandnud see katsetus vilja. Esimene õnnestunud ravi viidi läbi 1990. aastal, mil raviti adenosiini deaminaasi raske kombineeritud immuunpuudulikkuse (ADA-SCID) sündroomiga lapsi. \parencite{genajalugu}
+
+\subsection{Mitteviiruslikud geenide rakku viimise viisid}
+
+Geenide rakku viimiseks on mitmeid võimalusi. Selleks on kasutusel nii keemilised mitteviiruslikud vektorid kui ka füüsikalised meetodid. Mitteviiruslike meetodide tööpõhimõte on kerge, kuid nende rakendamine praktikas hõlmab endas mitmeid väljakutseid. Peale rakusiseste ja -väliste membraanide läbimise, tekitab raskusi ka nende tootmine, formuleerimine ja hoiustamine. \parencite{genviisid}.
+
+Kõige lihtsam viis geneetilise materjali rakku viimiseks on füüsikaliste meetodide abil,mille puhul ei kasutata kandjaid, vaid millele on omane rakumembraani füüsiline kahjustamine, et võimaldada plasmiidsetel DNA molekulidel rakku siseneda. Järgnevalt on toodud peamised füüsikalised meetodid geeniteraapia teostamiseks. Üks lihtsamaid viise geneetilise materjali  huvipakkuvasse rakku viimiseks on neid mikronõelaga süstides. Selles protsessis läbistatakse rakumembraan nõela abil. Võimalik on ka niinimetatud geenipüssi meetod, mis põhineb DNA-ga kaetud raskemetalliosakeste "tulistamisel" huvipakkuva koe rakku. Seda meetodi arendatakse eelkõige munasarjavähi raviks. Kolmas füüsikaline meetod on elektroporatsioon,  mille käigus tekitatakse erinevatele rakumembraani pooltele elektrivälja abil erinev laeng, selle tõttu tekib rakumembraani poor, mille kaudu saab plasmiidne DNA molekul rakku siseneda. Sonoporatsioon seisneb ultrahelilainete abil rakumembraani ajutiselt DNA suhtes läbilaskvaks muutmises. Fotoporatsiooni käigus tekitatakse laserimpulsiga rakumembraani ajutised poorid, mille kaudu saab DNA rakku siseneda. Võimalik on veel ka geneetiline materjal siduda magneetilise nanoosakesega ning selle magnetvälja tekitamise abil rakku transportimine. Hüdroporatsiooni ehk hüdrodünaamilise geeniülekande teostamiseks süstitakse suur hulk DNA lahust ülilühikese aja vältel huvipakkuvasse koesse. Vedeliku hulk avaldab rakumembraanidele rõhku ja tekitab neisse poorid, mille kaudu DNA rakku siseneb. Seda tehnikat arendatakse peamiselt maksarakkude raviks. \parencite{genviisid} Maksarakkudesse on võimalik geneetilist materjali viia ka mehhaanilise massaži käigus. Surve, mida massaažiga avaldatakse tekitab mõneks minutiks mööduvaid membraani defekte ning laseb kutte süstitud plasmiidsel DNA-l maksarakkudesse siseneda. \parencite{MML} 
+
+Keemilistest kandjad liigitatakse anorgaanilisteks, lipiidi-, polümeeri- ja peptiidipõhisteks. Anorgaanilistest osakesed on üldiselt nanoosakesed, mida saab kontstrueerida erineva suuruse, kuju ja poorsusega, et kaitsta sellele kinnitatud molekuli fagotsütoosi ja lagunemise eest. Anorgaanilistest osakestest on kõige uuritumad kaltsiumsulfaat, ränidioksiid, kuld, magneetilised ühendid, kvanttäpid, süsiniknanotorud, fullereenid ning supramolekulaarkompleksid. Katioonseta lipiidide põhistel kandjatel on positiivselt laetud pearühm seondunud nukleiinhapetes negatiivselt laetud fosfaatrühmaga ehk on moodustunud lipopleks. Geneetilist materjali ümbritsevad positiivselt laetud lipiidid aitavad seda kaitsta rakusiseste ja -väliste nukleaaside eest. Samuti omavad need vatastikmõju rakumembraanil asuvate negatiivselt laetud glükoproteiinide ja proteoglükaanidega. See võib hõlbustada nukleiinhapete sisenemist rakku. Lipiidide nanoemulsioon on koosneb umbes 200 nm suurustest osakestest, mis on moodustunud õlist, veest ja pindaktiivsest ainest. Lipiidide emulsiooni eeliseks on selle suurem stabiilsus. Tahked lipiidsed nanoosakesed on valmistatud lipiididest, mis on nii toa- kui ka kehatemperatuuril tahked. Nendel on nii katioonsete lipiidide kui ka lipiidse nanoemulsiooni eelised. Peptiidipõhiste vektoorite eelis teiste mitteviiruslike vektorite ees on kompaktsus, DNA tõhus kaitse ja sihtrakkude spetsiifilised retseptorid. Peptiidiligandeid kinnitatakse ka polüplekside ja lipoplekside külge, et muuta neid rakuspetsiifiliseks.  Katioonsed polümerid moodustavad DNAga nanoosakesi polüplekse, mis on stabiilsemad kui lipopleksid. Polümeerid
+jaotatakse looduslikeks ja sünteetilisteks. Looduslikud polümeerid on valgud, peptiidid ja polüsahhariidid. Sünteetilistest polümeeridest on kasutusel polüetüleenimiin, dendrimeerid ja polüfosfoestrid. \parencite{genviisid}
+
+\subsection{Viirusvektorid geeniteraapias}
+
+Geeniteraapias on kõige sagedamini kasututatav geneetilise materjali rakkudesse viimise viisik viirusvektorid \parencite{viirusvektorid}. Viirusvektorid on viirused, milles enamik viiruse pärilikkusainet on asendatud terapeutilise geeniga. Viirusvektor koosneb valgulisest kapsiidist, transgeenist ning  transgeeni ekspressiooni reguleerivast kasettist \parencite{vvkoostis}. Kasutusel on retroviirusvektorid, adenoviirusvektorid, adenoassotsieeritud
+viirusvektorid (AAV), lentiviirusvektorid ja herpes simplex viirusvektorid \parencite{viirusvektorid}. Viirusvektorite peamisteks puudujääkideks on nende kõrge immuunreaktsiooni esilekutsumise tõenäosus ning tsütotoksilisus \parencite{genviisid}. 
+
+\subsection{Kasutusel olevad ravid}
+
+Hetkel ravitakse Euroopa Liidus kombineeritud raku- ja geeniteraapiaga ehk  \textit{ex vivo} ehk kehavälise geeniteraapiaga B-rakulist ägedat lümfoidset leukeemiat (B-ALL), difuusset suurt B-rakulist lümfoomi (DLBCL), primaarset mediastiinumi B-suurrakklümfoomi (PMBCL), hulgimüeloomi (MM), rasket kombineeritud immuunpuudulikkust (SCID), beeta-talasseemiat, tserebraalset adrenoleukodüstroofiat (CALD), metakromaatilist leukodüstroofiat (MLD) ning raskekujulisi silma sarvkesta kahjustusi nagu näiteks keemilisi põletusi. \textit{In vivo} ehk kehasisese geeniteraapiaga on võimalik ravida rasket kombineeritud immuunpuudulikkust (SCID), melanoomi metastaase, spinaalset lihasatroofiat (SMA), pigmentoosset retiniiti (RP) ja Leberi kaasasündinud amauroosi (LCA). \parencite{genpraegu}
+
+
+\section{Adenoassotsieeritud viiruse (AAV) elutsükkel}
+
+\parencite{g}, \parencite{r}
+
+\subsection{Viiruse genoom}
+
+\subsection{Viiruse serotüübid}
+
+\section{AAV kasutamine geeniteraapias}
+
+\section{AAV kapsiidide modifitseerimine peptiididega}
+
+\chapter{Eksperimentaalne osa}
+
+\section{Töö eesmärk}
+
+\section{Materjalid ja metoodika}
+
+\subsection{Töös kasutatud plasmiidid}
+
+\subsection{Töös kasutatud peptiidide ja oligonukleotiidpraimerite järjestused}
+
+\subsection{Plasmiidide kloneerimine}
+
+\subsection{Plasmiidse DNA eraldamine aluselise lüüsi meetodil}
+
+\subsection{DNA restriktsioon, geelelektroforees ja fragmentide puhastamine}
+
+\subsection{Ligeerimine ja transformeerimine}
+
+\subsection{Koekultuuri rakkude kasvatamine}
+
+\subsection{AAV viirusvektorite tootmine ja puhastamine}
+
+\subsection{Viirusvektorite tiitri määramine qPCR meetodil}
+
+\subsection{Reporterviiruste testimine erinevates rakuliinides}
+
+\section{Tulemused}
+
+\subsection{Kanamütsiini resistentse sini-valge selektsiooni võimaldava Golden Gate vektori konstrueerimine}
+
+\subsection{Reporterviiruste tootmine}
+
+\subsection{Viirusvektorite tiitri määramine qPCR meetodil}
+
+\subsection{Reporterviiruste testimine erinevates rakuliinides}
+
+\section{Arutelu}
+
+\begin{comment}
 \section{Erimärgid}
 Osad märgid on reserveeritud vormindamise jaoks. Nende kirjutamiseks on vaja enne neid sisestada \textbackslash. Märkide \# \$ \% \^{} \& \_ \{ \} \~{} \textbackslash saab kasutada järgmisi käske:
 \begin{verbatim}
@@ -214,14 +329,13 @@ Erinevate viitamisstiilide näidised: \parencite[333]{test0}
 \parencite{wiki1}
 
 Joonealune märkus\footnote{Täiendav selgitus}, viide\footnote{Nimeseadus (RT I, 22.12.2018, 15) \textsection{}6 lõige 1, punkt 1.}.
+\end{comment}
 
 \addchap{Kokkuvõte}
 
-Kokkuvõttes sõnastatakse eesmärgi täitmine ja antakse vastus sissejuhatuses püsitatud uurimisküsimustele.
-
-\nocite{*}
+%\nocite{*}
 \printbibliography
-
+\begin{comment}
 % lisade algus
 \begin{appendices}
 
@@ -232,12 +346,13 @@ Kokkuvõttes sõnastatakse eesmärgi täitmine ja antakse vastus sissejuhatuses 
 
 % lisade lõpp
 \end{appendices}
+\end{comment}
 
 \addchap{Resümee}
-Töö lõppu lisatakse eesti- ja ingliskeelne resümee, mille koostamist õpetatakse vastavalt eesti keele ja inglise keele tunnis. Nii eesti- kui ingliskeelne resümee algavad uurimistöö pealkirjaga ning resümeede pikkus ei ületa ühte lehekülge. Ingliskeelne resümee (Abstract) peab sisaldama ingliskeelset töö pealkirja.
+
 
 \addchap{Abstract}
-This will contain the English translation of the \enquote{Resümee} section.
+ %\enquote{Resümee} section.
 
 \kinnitusleht
 \end{document}
