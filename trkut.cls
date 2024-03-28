@@ -53,13 +53,16 @@
 
 %% Leheküljenumbrid algavad sissejuhatuse teiselt leheküljelt
 \renewcommand\thepage{}
+\newtoggle{nummerdamelehti}
+\togglefalse{nummerdamelehti}
 
-% after the first \chapter (which should be \addchap{Sissejuhatus}):
-\AddtoOneTimeDoHook{heading/branch/nostar/chapter}{%
-    % re-enable page numbering,
-    \renewcommand{\thepage}{\arabic{page}}%
-    % but don't show the page number for the current (first) page
-    \thispagestyle{empty}%
+% Käsk nummerdamise alustamiseks
+\newcommand{\nummerdame}{%
+	\iftoggle{nummerdamelehti}{}{%
+		\renewcommand\thepage{\arabic{page}}%
+		\toggletrue{nummerdamelehti}%
+		\thispagestyle{empty}%
+	}
 }
 
 %---------------------------------------------
